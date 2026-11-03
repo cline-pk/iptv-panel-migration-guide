@@ -7,15 +7,15 @@ CISA added both CVEs to its Known Exploited Vulnerabilities list on 26 October 2
 | | |
 |---|---|
 | CVE | [CVE-2026-109618](https://nvd.nist.gov/vuln/detail/CVE-2026-109618), [CVE-2026-109619](https://nvd.nist.gov/vuln/detail/CVE-2026-109619) |
-| Affected (PHP advisory) | PHP 8.2 before 8.2.35, 8.3 before 8.3.36, 8.4 before 8.4.27, 8.5 before 8.5.12 |
+| Affected (NVD) | CVE-2026-109618: PHP 7.3.0 up to 8.2.34, 8.3 before 8.3.36, 8.4 before 8.4.27, 8.5 before 8.5.12. CVE-2026-109619: PHP 5.4.0 up to 8.2.34, plus the same 8.3 / 8.4 / 8.5 ranges |
 | Fixed in | 8.2.35, 8.3.36, 8.4.27, 8.5.12 |
 | Severity (NVD CVSS 3.1) | CVE-2026-109618: 9.8, CVE-2026-109619: 8.1 (PHP CVSS 4.0: 9.2 for both) |
 | Actively exploited | Yes, CISA KEV since 2026-10-26 |
-| PHP 7.x | End of life since 2022: not assessed and not patched by the PHP project |
+| PHP 7.3 / 7.4 | **Affected** (NVD) and end of life: the PHP project ships no fix for 7.x |
 | Advisories | [GHSA-w8hw-w9fx-j79w](https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w), [GHSA-6wmf-4rv5-p3rp](https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp) |
 
 ## Why IPTV panels are a special case
-Most IPTV panels (Xtream UI, XUI.ONE, Xtream Codes forks) ship **their own bundled PHP binary** inside the panel folder.
+Most IPTV panels (Xtream UI, XUI.ONE, Xtream Codes forks) ship **their own bundled PHP binary**, usually PHP 7.x, inside the panel folder. PHP 7.3 and 7.4 are inside the affected range and get no official fix.
 `apt upgrade` does not update that binary. If the panel is no longer maintained, nobody ships a fixed build.
 
 ## 1. Find which PHP your panel really runs
