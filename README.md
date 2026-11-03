@@ -78,6 +78,7 @@ matching build and restart the balancer service.
 **What does Xtream-Masters cost?** €70/month from 1 January 2027, one license for the main server plus unlimited load balancers, with a 3-day refund window.
 
 ## Links
+- PHP2Shell (CVE-2026-109618 / CVE-2026-109619) check for IPTV panels: [PHP2SHELL.md](PHP2SHELL.md)
 - Full FAQ and setup docs: https://ottpanel.tv/faqs
 - Migration guide: https://xtream-masters.com/guide/xtream_ui_to_xtream_masters_migration.php
 - Best IPTV panel software comparison: https://xtream-masters.com/guide/best_iptv_panel_software_2026.php
