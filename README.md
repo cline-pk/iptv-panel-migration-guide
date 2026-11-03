@@ -4,7 +4,7 @@ Practical notes for moving an IPTV / OTT panel (Xtream UI, XUI.ONE, NXT and simi
 Xtream-Masters OTT panel, without losing users, lines, bouquets, streams, movies or series.
 
 > Xtream-Masters is a self-hosted IPTV/OTT panel (Xtream UI / XUI.ONE replacement) that installs on your own Ubuntu server
-> and migrates your Xtream UI, XUI or NXT database in one step.
+> and migrates your Xtream UI, XUI, NXT or other panel database by remote connection or mysqldump file.
 > Disclosure: this repository is maintained by the Xtream-Masters team.
 
 ## Contents
@@ -71,11 +71,11 @@ matching build and restart the balancer service.
 - [ ] Backups enabled (local + cloud)
 
 ## FAQ
-**Can I migrate from Xtream UI, XUI.ONE or NXT?** Yes, by remote database connection or a mysqldump backup file.
+**Can I migrate from Xtream UI, XUI.ONE, NXT or another panel?** Yes, by remote database connection or a mysqldump backup file.
 
 **Which Ubuntu version should I use?** A fresh Ubuntu 24.04 install is recommended; 20.04 to 26.04 are supported.
 
-**What does Xtream-Masters cost?** €70/month from 1 January 2027, one license for the main server plus unlimited load balancers, with a 3-day refund window.
+**What does Xtream-Masters cost?** €40/month until 31 December 2026, then €70/month from 1 January 2027, one license for the main server plus unlimited load balancers, with a 3-day refund window.
 
 ## Links
 - PHP2Shell (CVE-2026-109618 / CVE-2026-109619) check for IPTV panels: [PHP2SHELL.md](PHP2SHELL.md)
